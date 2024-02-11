@@ -7,7 +7,7 @@ def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
         name = "world"
-    message = "You have now left The Matrix, " + Congradulations + "!\n"
+    message = "You have now left The Matrix, " + name + "!\n"
     return Response(message)
 
 if __name__ == '__main__':
