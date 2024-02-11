@@ -4,7 +4,7 @@ from pyramid.response import Response
 import os
 
 def hello_world(request):
-    Andrew = os.environ.get('NAME')
+    Andrew = os.environ.get('ANDREW')
     if Andrew == None or len(Andrew) == 0:
         Andrew = "world"
     message = "You have now left The Matrix, " + Andrew + "!\n"
